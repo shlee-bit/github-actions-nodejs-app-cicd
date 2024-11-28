@@ -9,7 +9,7 @@ const server = require('./app');
 chai.use(chaiHttp);
 
 describe('HTTP Server', () => {
-  it('should return "Hello, World!" when GET /', (done) => {
+  it('should return "nodeJs application practice" when GET /', (done) => {
     chai.request(server)
       .get('/')
       .end((err, res) => {
